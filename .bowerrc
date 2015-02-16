@@ -1,0 +1,7 @@
+{
+    "directory": "app/bower_components",
+	"storage": {
+		"packages": "target/.bower"
+	},
+    "interactive": false
+}

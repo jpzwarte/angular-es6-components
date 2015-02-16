@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="es6Demo">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0">
+
+        <title>Angular ES6 components</title>
+    </head>
+    <body>
+        <main ng-controller="HomeController as vm">
+            {{vm.greeting}}
+        </main>
+
+        <script src="/bower_components/angular/angular.js"></script>
+        <script src="/bower_components/angular-route/angular-route.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
