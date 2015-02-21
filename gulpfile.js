@@ -81,12 +81,12 @@ gulp.task('connect', function () {
         .use(modrewrite(['!(\\.\\w+($|\\?)|\/docs) /index.html']))
         /* Livereload */
         .use(livereload({ port: livereloadPort }))
-        /* Mount assets */
-        .use('/assets', serveStatic('../../static/src/main/resources/assets/'))
+        /* Mount node_modules */
+        .use('/node_modules', serveStatic('node_modules'))
         /* Mount target */
         .use(serveStatic('target/dist/'))
         /* Mount app */
-        .use(serveStatic('app/'));
+        .use(serveStatic('app'));
 
     var server = http.createServer(app);
 
